@@ -9,6 +9,7 @@ call plug#begin()
 " syntaxis
 Plug 'leafgarland/typescript-vim'
 Plug 'joukevandermaas/vim-ember-hbs'
+Plug 'gko/vim-coloresque'
 
 " nerdtree
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
