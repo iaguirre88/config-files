@@ -1,12 +1,20 @@
+Clone the repository and move into de folder.
+```
+git clone
+cd config-files
+```
+
 ## nvim
 ```
-cd config-files
 ln -s $(pwd)/nvim ~/.config/nvim
 ```
 Open nvim and wait for the plugins to be installed.
 
 ## zsh
-To do
+```
+ln -s $(pwd)/zsh ~/.config/zsh
+cp zsh/zshrc.example ~/.zshrc
+```
 
 ## tmux
 To do
