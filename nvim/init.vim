@@ -10,6 +10,7 @@ call plug#begin()
 Plug 'leafgarland/typescript-vim'
 Plug 'joukevandermaas/vim-ember-hbs'
 Plug 'gko/vim-coloresque'
+Plug 'pangloss/vim-javascript'
 
 " autocomplete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
