@@ -22,4 +22,7 @@ ln -s $(pwd)/hyper/hyper.js ~/.hyper.js
 ```
 
 ## tmux
-To do
+```
+ln -s $(pwd)/tmux/tmux.conf ~/.tmux.conf
+```
+
