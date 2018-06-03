@@ -19,6 +19,9 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
+" nerd commenter
+Plug 'scrooloose/nerdcommenter'
+
 " add CtrlPlugin
 Plug 'ctrlpvim/ctrlp.vim'
 
@@ -108,3 +111,7 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 let g:deoplete#enable_at_startup = 1
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" NERD Commenter settings
+let g:NERDSpaceDelims = 1
+let g:NERDDefaultAlign = 'left'
