@@ -40,24 +40,11 @@ Plug 'tomasiser/vim-code-dark'
 
 call plug#end()
 
-
-"some stuff to get the mouse going in term
-" TODO
-
 " Map ESC key to JK
 :inoremap jk <Esc>
 
-" Disable arrow keys in normal mode
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-
-" Disable arrow keys in insert mode
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
+" Enable mouse support
+set mouse=a
 
 " Allow . to execute once for each line of a visual selection
 vnoremap . :normal .<CR>
