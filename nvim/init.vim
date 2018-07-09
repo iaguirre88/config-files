@@ -38,6 +38,9 @@ Plug 'tpope/vim-fugitive'
 " colorscheme
 Plug 'tomasiser/vim-code-dark'
 
+" change definition of word to support camelcase and underscore
+Plug 'chaoren/vim-wordmotion'
+
 call plug#end()
 
 " Map ESC key to JK
