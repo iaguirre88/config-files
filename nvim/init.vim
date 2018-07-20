@@ -11,6 +11,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'joukevandermaas/vim-ember-hbs'
 Plug 'gko/vim-coloresque'
 Plug 'pangloss/vim-javascript'
+Plug 'joshdick/onedark.vim'
 
 " autocomplete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -35,9 +36,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
-" colorscheme
-Plug 'tomasiser/vim-code-dark'
-
 " change definition of word to support camelcase and underscore
 Plug 'chaoren/vim-wordmotion'
 
@@ -61,10 +59,11 @@ set wildmenu
 
 " Syntax and highlighting
 syntax enable
-colorscheme codedark
-let g:airline_theme = 'codedark'
 set cursorline
-" hi CursorLine cterm=NONE ctermbg=gray ctermfg=black
+
+let g:onedark_terminal_italics = 1
+colorscheme onedark
+let g:airline_theme = 'onedark'
 
 " Set line numbers
 set number
