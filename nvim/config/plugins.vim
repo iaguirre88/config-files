@@ -10,6 +10,7 @@ call plug#begin()
   " syntaxis
   Plug 'leafgarland/typescript-vim'
   Plug 'joukevandermaas/vim-ember-hbs'
+  Plug 'elixir-editors/vim-elixir'
   Plug 'gko/vim-coloresque'
   Plug 'pangloss/vim-javascript'
   Plug 'joshdick/onedark.vim'
