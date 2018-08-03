@@ -18,6 +18,8 @@ call plug#begin()
 
   " autocomplete
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'tpope/vim-endwise'
+  Plug 'jiangmiao/auto-pairs'
 
   " nerdtree
   Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
