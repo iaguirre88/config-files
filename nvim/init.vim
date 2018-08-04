@@ -1,5 +1,5 @@
-source ~/config-files/nvim/config/plugins.vim
-source ~/config-files/nvim/config/plugin_settings.vim
+runtime config/plugins.vim
+runtime config/plugin_settings.vim
 
-source ~/config-files/nvim/config/input.vim
-source ~/config-files/nvim/config/highlighting.vim
+runtime config/input.vim
+runtime config/highlighting.vim
