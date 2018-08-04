@@ -11,3 +11,14 @@ vnoremap > >gv
 
 " Enable wildmenu
 set wildmenu
+
+" Persistent undo
+set undofile
+set undodir=/tmp/vim/undo
+
+" Remember last location in file
+autocmd BufReadPost *
+  \ if line("'\"") > 0 && line("'\"") <= line("$") |
+  \   exe "normal g`\"" |
+  \ endif
+
