@@ -25,3 +25,6 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 " NERD Commenter settings
 let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
+
+" Save hooks
+let g:rustfmt_autosave = 1

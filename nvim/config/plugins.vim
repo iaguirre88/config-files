@@ -15,6 +15,7 @@ call plug#begin()
   Plug 'pangloss/vim-javascript'
   Plug 'joshdick/onedark.vim'
   Plug 'Yggdroot/indentLine'
+  Plug 'rust-lang/rust.vim'
 
   " autocomplete
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
