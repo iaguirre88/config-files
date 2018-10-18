@@ -16,11 +16,6 @@ ln -s $(pwd)/zsh ~/.config/zsh
 cp zsh/zshrc.example ~/.zshrc
 ```
 
-## hyper
-```
-ln -s $(pwd)/hyper/hyper.js ~/.hyper.js
-```
-
 ## tmux
 ```
 ln -s $(pwd)/tmux/tmux.conf ~/.tmux.conf
