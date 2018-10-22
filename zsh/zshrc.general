@@ -1,25 +1,20 @@
 # ============================================================================
-# OH-MY-ZSH CONFIGURATION
+# ANTIGEN PLUGIN MANAGER
 # ============================================================================
 
-# Path to your oh-my-zsh installation.
-export ZSH=~/.oh-my-zsh
+source ~/.antigen.zsh
 
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# Load the oh-my-zsh's library
+antigen use oh-my-zsh
 
-# Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# Bundles from the default repo
+antigen bundle git
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+# Load the theme
+antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
 
-source $ZSH/oh-my-zsh.sh
+# Tell Antigen that you're done.
+antigen apply
 
 
 

@@ -12,6 +12,9 @@ Open nvim and wait for the plugins to be installed.
 
 ## zsh
 ```
+# Antigen plugin manager
+curl -L git.io/antigen > ~/.antigen.zsh
+
 ln -s $(pwd)/zsh ~/.config/zsh
 cp zsh/zshrc.example ~/.zshrc
 ```
