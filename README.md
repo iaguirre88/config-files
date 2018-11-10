@@ -13,7 +13,7 @@ Open nvim and wait for the plugins to be installed.
 ## zsh
 ```
 # Antigen plugin manager
-curl -L git.io/antigen > ~/.antigen.zsh
+git clone https://github.com/zsh-users/antigen.git ~/.antigen
 
 ln -s $(pwd)/zsh ~/.config/zsh
 cp zsh/zshrc.example ~/.zshrc
