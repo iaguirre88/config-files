@@ -11,21 +11,15 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle chriskempson/base16-shell
 
-# Load the theme
+# # Load the theme
 antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
 
 # Tell Antigen that you're done.
 antigen apply
 
-
-
 # ============================================================================
 # GENERAL USER CONFIGURATION
 # ============================================================================
-
-# Set terminal color scheme
-eval base16_onedark
-
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
@@ -40,3 +34,15 @@ fi
 alias ll='ls -l'
 alias la='ls -la'
 alias we='curl wttr.in'
+
+# Change terminal colors
+if [[ ! -v BASE16_COLOR ]]; then
+  export BASE16_COLOR='base16_onedark'
+  eval $BASE16_COLOR
+fi
+
+alias light='export BASE16_COLOR=base16_one-light && eval $BASE16_COLOR'
+alias dark='export BASE16_COLOR=base16_onedark && eval $BASE16_COLOR'
+
+# Persist 'less' result in terminal
+export LESS="--quit-if-one-screen --no-init --RAW-CONTROL-CHARS"
