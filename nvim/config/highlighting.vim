@@ -2,9 +2,18 @@
 syntax enable
 set cursorline
 
-let g:onedark_terminal_italics = 1
-colorscheme onedark
-let g:airline_theme = 'onedark'
+let g:gruvbox_contrast_dark = 'medium'
+let g:gruvbox_contrast_light = 'hard'
+let g:gruvbox_invert_selection = 0
+let g:gruvbox_italic = 1
+let g:airline_theme = 'gruvbox'
+
+colorscheme gruvbox
+set background=dark
+
+" let g:indentLine_color_term = 237
+let g:indentLine_setColors = 0
+let g:indentLine_enabled = 0
 
 " Line numbers
 set number

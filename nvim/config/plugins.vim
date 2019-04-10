@@ -8,12 +8,13 @@ endif
 call plug#begin()
 
   " syntaxis
+  Plug 'morhetz/gruvbox'
+
   Plug 'leafgarland/typescript-vim'
   Plug 'joukevandermaas/vim-ember-hbs'
   Plug 'elixir-editors/vim-elixir'
   Plug 'gko/vim-coloresque'
   Plug 'pangloss/vim-javascript'
-  Plug 'joshdick/onedark.vim'
   Plug 'Yggdroot/indentLine'
   Plug 'rust-lang/rust.vim'
 
