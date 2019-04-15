@@ -12,7 +12,9 @@ antigen bundle git
 antigen bundle chriskempson/base16-shell
 
 # # Load the theme
-antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
+antigen bundle mafredri/zsh-async
+antigen bundle sindresorhus/pure
+antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Tell Antigen that you're done.
 antigen apply
