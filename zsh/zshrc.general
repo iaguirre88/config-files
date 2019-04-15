@@ -22,15 +22,13 @@ antigen apply
 # ============================================================================
 # GENERAL USER CONFIGURATION
 # ============================================================================
+set editing-mode normal
+
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='vim'
-fi
+export EDITOR='vim'
 
 # Aliases
 alias ll='ls -l'
@@ -39,12 +37,12 @@ alias we='curl wttr.in'
 
 # Change terminal colors
 if [[ ! -v BASE16_COLOR ]]; then
-  export BASE16_COLOR='base16_onedark'
+  export BASE16_COLOR='base16_ia-dark'
   eval $BASE16_COLOR
 fi
 
-alias light='export BASE16_COLOR=base16_one-light && eval $BASE16_COLOR'
-alias dark='export BASE16_COLOR=base16_onedark && eval $BASE16_COLOR'
+alias light='export BASE16_COLOR=base16_ia-light && eval $BASE16_COLOR'
+alias dark='export BASE16_COLOR=base16_ia-dark && eval $BASE16_COLOR'
 
 # Persist 'less' result in terminal
 export LESS="--quit-if-one-screen --no-init --RAW-CONTROL-CHARS"
