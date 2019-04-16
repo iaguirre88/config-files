@@ -22,3 +22,12 @@ autocmd BufReadPost *
   \   exe "normal g`\"" |
   \ endif
 
+" Toggle between dark and light color scheme
+:command ToggleScheme :call SchemeToggle()
+function! SchemeToggle()
+    if &background == "dark"
+        set background=light
+    else
+	set background=dark
+    endif
+endfunction
