@@ -17,11 +17,13 @@ call plug#begin()
   Plug 'pangloss/vim-javascript'
   Plug 'Yggdroot/indentLine'
   Plug 'rust-lang/rust.vim'
+  Plug 'slim-template/vim-slim'
+  Plug 'vim-ruby/vim-ruby'
 
   " autocomplete
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'tpope/vim-endwise'
-  Plug 'jiangmiao/auto-pairs'
+  Plug 'slashmili/alchemist.vim'
 
   " nerdtree
   Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -42,8 +44,12 @@ call plug#begin()
   " git tools
   Plug 'airblade/vim-gitgutter'
   Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-rhubarb'
 
   " change definition of word to support camelcase and underscore
   Plug 'chaoren/vim-wordmotion'
+
+  " Run test in file
+  Plug 'janko-m/vim-test'
 
 call plug#end()
