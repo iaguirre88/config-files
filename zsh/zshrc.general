@@ -9,12 +9,14 @@ antigen use oh-my-zsh
 
 # Bundles from the default repo
 antigen bundle git
-antigen bundle chriskempson/base16-shell
 
-# # Load the theme
+# Load the theme
 antigen bundle mafredri/zsh-async
 antigen bundle sindresorhus/pure
+
+antigen bundle chriskempson/base16-shell
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
 
 # Tell Antigen that you're done.
 antigen apply
