@@ -10,15 +10,25 @@ call plug#begin()
   " syntaxis
   Plug 'morhetz/gruvbox'
 
+  " JS
+  Plug 'pangloss/vim-javascript'
   Plug 'leafgarland/typescript-vim'
   Plug 'joukevandermaas/vim-ember-hbs'
+  Plug 'dsawardekar/ember.vim'
+
+  " Elixir
   Plug 'elixir-editors/vim-elixir'
-  Plug 'gko/vim-coloresque'
-  Plug 'pangloss/vim-javascript'
-  Plug 'Yggdroot/indentLine'
-  Plug 'rust-lang/rust.vim'
+
+  " Ruby
   Plug 'slim-template/vim-slim'
   Plug 'vim-ruby/vim-ruby'
+
+  " Rust
+  Plug 'rust-lang/rust.vim'
+
+  " Misc
+  Plug 'gko/vim-coloresque'
+  Plug 'Yggdroot/indentLine'
 
   " autocomplete
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
