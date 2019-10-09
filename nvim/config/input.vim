@@ -19,7 +19,7 @@ autocmd BufReadPost *
   \ endif
 
 " Toggle between dark and light color scheme
-:command ToggleScheme :call SchemeToggle()
+:command! SchemeToggle :call SchemeToggle()
 function! SchemeToggle()
     if &background == "dark"
         set background=light
