@@ -22,5 +22,7 @@ cp zsh/zshrc.example ~/.zshrc
 ## tmux
 ```
 ln -s $(pwd)/tmux/tmux.conf ~/.tmux.conf
+~/.tmux/plugins/tpm/bin/install_plugins
 ```
 
+More info about tmux plugins [here](https://github.com/tmux-plugins/tpm)
