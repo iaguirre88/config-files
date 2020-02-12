@@ -26,5 +26,18 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
 
+" lognroll
+let g:lognroll#enable_insert_mode = 0
+
 " Save hooks
 let g:rustfmt_autosave = 1
+
+" Spellcheck
+let g:enable_spelunker_vim = 1
+let g:spelunker_check_type = 2
+
+" Angular
+let g:angular_find_ignore = ['dist/']
+
+" Tabulous
+let tabulousLabelNameTruncate = 0

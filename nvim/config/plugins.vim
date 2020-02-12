@@ -12,9 +12,12 @@ call plug#begin()
 
   " JS
   Plug 'pangloss/vim-javascript'
-  Plug 'leafgarland/typescript-vim'
+  " Plug 'leafgarland/typescript-vim'
+  Plug 'HerringtonDarkholme/yats.vim'
   Plug 'joukevandermaas/vim-ember-hbs'
   Plug 'dsawardekar/ember.vim'
+  Plug 'burnettk/vim-angular'
+  Plug 'prettier/vim-prettier', { 'do': 'npm install'}
 
   " Elixir
   Plug 'elixir-editors/vim-elixir'
@@ -29,6 +32,8 @@ call plug#begin()
   " Misc
   Plug 'gko/vim-coloresque'
   Plug 'Yggdroot/indentLine'
+  Plug 'kamykn/spelunker.vim'
+  Plug 'webdevel/tabulous'
 
   " autocomplete
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -61,5 +66,8 @@ call plug#begin()
 
   " Run test in file
   Plug 'janko-m/vim-test'
+
+  " Show visual marks
+  Plug 'kshenoy/vim-signature'
 
 call plug#end()
