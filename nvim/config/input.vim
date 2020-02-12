@@ -12,6 +12,9 @@ vnoremap > >gv
 " Enable wildmenu
 set wildmenu
 
+" Copy to system clipboard
+set clipboard=unnamedplus
+
 " Remember last location in file
 autocmd BufReadPost *
   \ if line("'\"") > 0 && line("'\"") <= line("$") |
