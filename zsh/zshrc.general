@@ -52,7 +52,7 @@ if [[ ! -v BASE16_COLOR ]]; then
   eval $BASE16_COLOR
 fi
 
-alias light='export BASE16_COLOR=base16_ia-light && eval $BASE16_COLOR'
+alias light='export BASE16_COLOR=base16_cupertino && eval $BASE16_COLOR'
 alias dark='export BASE16_COLOR=base16_ia-dark && eval $BASE16_COLOR'
 
 # Persist 'less' result in terminal
