@@ -19,3 +19,8 @@ let g:indentLine_enabled = 0
 set number
 set relativenumber
 map <C-n> :set number! relativenumber!<CR>
+
+" Highlight trailing whitespaces
+:highlight ExtraWhitespace ctermbg=red guibg=red
+:autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/
+:autocmd InsertLeave * redraw!
