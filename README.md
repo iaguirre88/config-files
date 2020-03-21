@@ -21,8 +21,17 @@ cp zsh/zshrc.example ~/.zshrc
 
 ## tmux
 ```
+# Copy settings files
 ln -s $(pwd)/tmux/tmux.conf ~/.tmux.conf
+
+# Install tpm plugin manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ~/.tmux/plugins/tpm/bin/install_plugins
+```
+
+### Update plugins
+```
+~/.tmux/plugins/tpm/bin/update_plugins all
 ```
 
 More info about tmux plugins [here](https://github.com/tmux-plugins/tpm)
