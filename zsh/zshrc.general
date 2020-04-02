@@ -14,7 +14,6 @@ antigen bundle git
 antigen bundle mafredri/zsh-async
 antigen bundle sindresorhus/pure
 
-antigen bundle softmoth/zsh-vim-mode
 antigen bundle chriskempson/base16-shell
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
@@ -25,18 +24,13 @@ antigen apply
 # ============================================================================
 # GENERAL USER CONFIGURATION
 # ============================================================================
-# zsh-vim-mode settings
-setopt PROMPT_SUBST
-MODE_CURSOR_VICMD="block"
-MODE_CURSOR_VIINS="steady bar"
-
-# You may need to manually set your language environment
+# Language environment
 export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
 
-# Prevent duplicated entries in historial
+# Prevent duplicated entries in bash history
 setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FIND_NO_DUPS
