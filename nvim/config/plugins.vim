@@ -32,15 +32,17 @@ call plug#begin()
   " Misc
   Plug 'gko/vim-coloresque'
   Plug 'Yggdroot/indentLine'
-  Plug 'kamykn/spelunker.vim'
-  Plug 'webdevel/tabulous'
+  Plug 'kamykn/spelunker.vim'   " check spelling
+  Plug 'webdevel/tabulous'      " add numbers in tabs
+  Plug 'kshenoy/vim-signature'  " show visual marks
+  Plug 'chaoren/vim-wordmotion' " change definition of word to support camelCase and underscore
 
   " autocomplete
   Plug 'tpope/vim-endwise'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
   " nerdtree
-  Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+  Plug 'scrooloose/nerdtree'
   Plug 'Xuyuanp/nerdtree-git-plugin'
 
   " nerd commenter

@@ -21,14 +21,9 @@ nmap <silent> gr <Plug>(coc-references)
 
 
 " NERDTree settings
-map <C-\> :NERDTreeToggle<CR>
-
-" Open if starting vim with no arguments
-autocmd StdinReadPre * let s:std_in=1
-
-" Close NERDTree when a file is opened
+map <C-\> :NERDTreeFind<CR>
 let NERDTreeQuitOnOpen = 1
-
+let g:NERDTreeWinSize = 60
 
 " CtrlP settings
 let g:ctrlp_map = '<c-p>'
