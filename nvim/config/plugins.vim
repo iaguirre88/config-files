@@ -36,9 +36,8 @@ call plug#begin()
   Plug 'webdevel/tabulous'
 
   " autocomplete
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'tpope/vim-endwise'
-  Plug 'slashmili/alchemist.vim'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
   " nerdtree
   Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
