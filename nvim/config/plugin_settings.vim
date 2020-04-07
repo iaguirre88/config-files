@@ -29,9 +29,16 @@ let g:NERDTreeWinSize = 60
 " CtrlP settings
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
 
-let g:ctrlp_working_path_mode = 'ra' " search in project directory
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard'] " ignore files in .gitignore
+if executable('rg')
+  set grepprg=rg\ --color=never
+  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+  let g:ctrlp_use_caching = 0
+else
+  :echo 'Consider installing ripgrep'
+  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+endif
 
 
 " NERD Commenter settings

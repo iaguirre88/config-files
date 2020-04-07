@@ -35,6 +35,7 @@ call plug#begin()
   Plug 'webdevel/tabulous'      " add numbers in tabs
   Plug 'kshenoy/vim-signature'  " show visual marks
   Plug 'chaoren/vim-wordmotion' " change definition of word to support camelCase and underscore
+  Plug 'jremmen/vim-ripgrep'    " ripgrep
 
   " autocomplete
   Plug 'tpope/vim-endwise'
