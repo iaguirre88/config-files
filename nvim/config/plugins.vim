@@ -12,8 +12,7 @@ call plug#begin()
 
   " JS
   Plug 'pangloss/vim-javascript'
-  " Plug 'leafgarland/typescript-vim'
-  Plug 'HerringtonDarkholme/yats.vim'
+  Plug 'HerringtonDarkholme/yats.vim' " typescript
   Plug 'joukevandermaas/vim-ember-hbs'
   Plug 'dsawardekar/ember.vim'
   Plug 'burnettk/vim-angular'
@@ -62,13 +61,7 @@ call plug#begin()
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-rhubarb'
 
-  " change definition of word to support camelcase and underscore
-  Plug 'chaoren/vim-wordmotion'
-
   " Run test in file
   Plug 'janko-m/vim-test'
-
-  " Show visual marks
-  Plug 'kshenoy/vim-signature'
 
 call plug#end()

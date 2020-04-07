@@ -18,6 +18,7 @@ endfunction
 
 nmap <silent> gd :split<CR><Plug>(coc-definition)
 nmap <silent> gr <Plug>(coc-references)
+nmap <leader> f :call CocAction('format')<CR>
 
 
 " NERDTree settings
@@ -36,9 +37,6 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 " NERD Commenter settings
 let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
-
-" lognroll
-let g:lognroll#enable_insert_mode = 0
 
 " Save hooks
 let g:rustfmt_autosave = 1
