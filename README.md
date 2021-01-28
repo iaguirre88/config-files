@@ -1,6 +1,8 @@
+# Installation
+
 Clone the repository and move into de folder.
 ```
-git clone
+git clone git@github.com:iaguirre88/config-files.git
 cd config-files
 ```
 
@@ -29,7 +31,14 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ~/.tmux/plugins/tpm/bin/install_plugins
 ```
 
-### Update plugins
+## Other Tools
+### Starship
+```
+curl -fsSL https://starship.rs/install.sh | bash
+```
+
+## Updating
+### Update tmux plugins
 ```
 ~/.tmux/plugins/tpm/bin/update_plugins all
 ```
