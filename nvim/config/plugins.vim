@@ -13,10 +13,10 @@ call plug#begin()
   " JS
   Plug 'pangloss/vim-javascript'
   Plug 'HerringtonDarkholme/yats.vim' " typescript
+  Plug 'maxmellon/vim-jsx-pretty'
   Plug 'joukevandermaas/vim-ember-hbs'
   Plug 'dsawardekar/ember.vim'
   Plug 'burnettk/vim-angular'
-  Plug 'prettier/vim-prettier', { 'do': 'npm install'}
 
   " Elixir
   Plug 'elixir-editors/vim-elixir'
@@ -50,9 +50,6 @@ call plug#begin()
 
   " CtrlPlugin
   Plug 'ctrlpvim/ctrlp.vim'
-
-  " ALE async linter
-  Plug 'w0rp/ale'
 
   " add vim-airline powerline
   Plug 'vim-airline/vim-airline'
