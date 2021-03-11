@@ -25,6 +25,7 @@ call plug#begin()
   " autocomplete
   Plug 'tpope/vim-endwise'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'alvan/vim-closetag'
 
   " nerdtree
   Plug 'scrooloose/nerdtree'
