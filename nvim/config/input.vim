@@ -30,3 +30,6 @@ function! SchemeToggle()
 	set background=dark
     endif
 endfunction
+
+" soft wrap line
+set wrap linebreak nolist
