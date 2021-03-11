@@ -1,6 +1,6 @@
 " CoC extensions
 let g:coc_global_extensions =
-  \ ['coc-angular', 'coc-css', 'coc-elixir', 'coc-html', 'coc-json', 'coc-tsserver', 'coc-tslint-plugin', 'coc-eslint', 'coc-prettier']
+  \ ['coc-angular', 'coc-css', 'coc-elixir', 'coc-html', 'coc-json', 'coc-tsserver', 'coc-tslint-plugin', 'coc-eslint', 'coc-prettier', 'coc-rls']
 set hidden
 set nobackup
 set nowritebackup
@@ -38,8 +38,8 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 nmap <silent> gd :split<CR><Plug>(coc-definition)
 nmap <silent> gr <Plug>(coc-references)
 
-xmap <leader> f :call CocAction('format')<CR>
-nmap <leader> f :call CocAction('format')<CR>
+vmap <leader>f <Plug>(coc-format-selected)
+nmap <leader>f <Plug>(coc-format-selected)
 
 " Applying codeAction to the selected region.
 " Example: `<leader>aap` for current paragraph
