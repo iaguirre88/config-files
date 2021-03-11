@@ -1,3 +1,5 @@
+set nocompatible
+
 " Install plugins the first time nvim is opened
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
@@ -9,24 +11,7 @@ call plug#begin()
 
   " syntaxis
   Plug 'morhetz/gruvbox'
-
-  " JS
-  Plug 'pangloss/vim-javascript'
-  Plug 'HerringtonDarkholme/yats.vim' " typescript
-  Plug 'maxmellon/vim-jsx-pretty'
-  Plug 'joukevandermaas/vim-ember-hbs'
-  Plug 'dsawardekar/ember.vim'
-  Plug 'burnettk/vim-angular'
-
-  " Elixir
-  Plug 'elixir-editors/vim-elixir'
-
-  " Ruby
-  Plug 'slim-template/vim-slim'
-  Plug 'vim-ruby/vim-ruby'
-
-  " Rust
-  Plug 'rust-lang/rust.vim'
+  Plug 'sheerun/vim-polyglot'
 
   " Misc
   Plug 'gko/vim-coloresque'
