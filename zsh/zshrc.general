@@ -1,0 +1,58 @@
+# ============================================================================
+# ANTIGEN PLUGIN MANAGER
+# ============================================================================
+
+source ~/.antigen/antigen.zsh
+
+# Load the oh-my-zsh's library
+antigen use oh-my-zsh
+
+# Bundles from the default repo
+antigen bundle git
+
+# Load the theme
+antigen bundle mafredri/zsh-async@main
+antigen bundle chriskempson/base16-shell
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+
+# Tell Antigen that you're done.
+antigen apply
+
+# ============================================================================
+# GENERAL USER CONFIGURATION
+# ============================================================================
+# Language environment
+export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+export EDITOR='vim'
+
+# Prevent duplicated entries in bash history
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_FIND_NO_DUPS
+
+# Aliases
+alias ll='ls -l'
+alias la='ls -la'
+alias we='curl wttr.in'
+alias vim='nvim'
+
+# Change terminal colors
+if [[ ! -v BASE16_COLOR ]]; then
+  export BASE16_COLOR='base16_ia-dark'
+  eval $BASE16_COLOR
+fi
+
+alias light='export BASE16_COLOR=base16_cupertino && eval $BASE16_COLOR'
+alias dark='export BASE16_COLOR=base16_ia-dark && eval $BASE16_COLOR'
+
+# Persist 'less' result in terminal
+export LESS="--quit-if-one-screen --no-init --RAW-CONTROL-CHARS"
+
+# Starship terminal
+eval "$(starship init zsh)"
+
+# Mcfly (history search)
+eval "$(mcfly init zsh)"

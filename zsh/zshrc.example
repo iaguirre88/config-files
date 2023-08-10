@@ -1,0 +1,13 @@
+source ~/.config/zsh/zshrc.general
+
+# ============================================================================
+# PUT YOUR SPECIFIC USER CONFIGURATION HERE
+# ============================================================================
+# NVM
+# ~/.config/zsh/zshrc.nvm
+
+# RVM
+# ~/.config/zsh/zshrc.rvm
+
+# Virtualenv
+# ~/.config/zsh/zshrc.virtualenv

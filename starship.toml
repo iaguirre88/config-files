@@ -1,0 +1,20 @@
+command_timeout = 5000
+
+[aws]
+disabled = true
+
+[ruby]
+disabled = true
+
+[cmd_duration]
+disabled = true
+
+[directory]
+truncation_length = 8
+
+[package]
+disabled = true
+
+[nodejs]
+format = "[$symbol($version )]($style)"
+
