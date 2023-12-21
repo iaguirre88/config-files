@@ -2,7 +2,7 @@
 # ANTIGEN PLUGIN MANAGER
 # ============================================================================
 
-source ~/.antigen/antigen.zsh
+source /opt/homebrew/share/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library
 antigen use oh-my-zsh
@@ -56,3 +56,5 @@ eval "$(starship init zsh)"
 
 # Mcfly (history search)
 eval "$(mcfly init zsh)"
+export MCFLY_KEY_SCHEME=vim
+export MCFLY_FUZZY=2
