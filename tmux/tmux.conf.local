@@ -1,0 +1,20 @@
+# prefix is space
+set-option -g prefix C-Space
+unbind C-Space
+bind C-Space send-prefix
+
+# enables mouse
+setw -g mouse on
+bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'copy-mode -e'"
+bind -n WheelDownPane select-pane -t= \; send-keys -M
+
+# persists display panes number
+bind -T prefix q display-panes -d 0
+
+# copy mode
+bind -T copy-mode-vi v send -X begin-selection
+bind -T copy-mode-vi C-v send -X rectangle-toggle
+bind -T copy-mode-vi y send -X copy-selection-and-cancel
+bind -T copy-mode-vi Escape send -X cancel
+bind -T copy-mode-vi H send -X start-of-line
+bind -T copy-mode-vi L send -X end-of-line
