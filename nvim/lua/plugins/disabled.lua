@@ -1,4 +1,4 @@
 return {
+  { "folke/flash.nvim", enabled = false },
   { "echasnovski/mini.pairs", enabled = false },
-  { "rafamadriz/friendly-snippets", enabled = false },
 }
